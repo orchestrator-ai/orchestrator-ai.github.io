@@ -4,7 +4,7 @@ title: Pytorch tutorials
 permalink: /pytorch/
 ---
 
-# [Pytorch tutorial](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
+## [Pytorch online tutorial](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 - The tutorial has links to Jupyter notebooks and Google Colab notebooks!
 - If running in Colab, be sure to enable the GPU (Runtime > Change runtime type)
 

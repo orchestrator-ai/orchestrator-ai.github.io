@@ -8,7 +8,7 @@ title: JEKYLL WEBSITE NOTES
 The only rules for making a post is:
 1. Add .md file into the _posts folder
 2. Always include the following in the header:
-```
+```javascript
 ---
 layout: post
 title: [YOUR TITLE]

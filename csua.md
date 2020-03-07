@@ -99,3 +99,10 @@ Create a virtualenv with `python3 -m venv [name-of-env]`. When you're in the vir
 You can exit the environment with `deactivate`, and enter it with `source [name-of-env]/bin/activate`.
 
 Install Pytorch with pip, then run this [notebook](resources/csua/test_gpu.ipynb) to make sure GPU access is working. (You can download it to CSUA using `wget` or `curl`).
+
+
+# Want to talk to your buddies on the CSUA server?
+
+Run `who` to find the list of users currently on the server.
+To write someone a message, just type `write [username] [tty]` and hit enter, then spam as much as you'd like.
+For example, `write user1 pts/8`.
