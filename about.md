@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Welcome to Orchestrator!
 
-### More Information
+### The Team
 
-A place to include any other types of information that you'd like to include about yourself.
+Praveen - our awesome PL who is carrying this
+Andrew
+Jasmine
+James
+Alicia
+(Jim??) jk we love u
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
