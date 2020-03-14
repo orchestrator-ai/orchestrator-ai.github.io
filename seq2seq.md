@@ -12,7 +12,7 @@ First, read an [overview](https://medium.com/@devnag/seq2seq-the-clown-car-of-de
 
 ### [Autoregressive models](https://www.investopedia.com/terms/a/autoregressive.asp)
 
-- For time series data $f(x)$, predicting $f(x + 1)$ using $f(1)$ ... $f(x)$.
+- For time series data $$f(x)$$, predicting $$f(x + 1)$$ using $$f(1)$$ ... $$f(x)$$.
 
 ### Why learn Seq2Seq?
 
