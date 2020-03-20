@@ -2,7 +2,7 @@
 layout: post
 title: Add to the website!
 ---
-### Basic rundown of how to modify this website
+Basic rundown of how to modify this website
 
 ## Step-by-step process for making a post:
 1. Add .md file into the _posts folder
