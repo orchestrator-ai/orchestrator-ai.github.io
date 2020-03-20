@@ -28,7 +28,7 @@ both test and train. So I've clipped the loss to that range for the following
 plots:
 
 {% for i in (0..6) %}
-<img src="{{site.url}}/resources/csua_training_results/analysis_{{i}}.png" height=400px>
+![]({{site.url}}/resources/csua_training_results/analysis_{{i}}.png)
 {% endfor %}
 
 You might notice that this was slightly irregular training. In particular,
