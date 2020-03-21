@@ -31,7 +31,12 @@ making our own music classifier + brief overview of how UMTN collects data
 - Processes music with `librosa`
 - Multiple layers of LSTM Recurrent Neural Nets
 
-
-
 ## UMTN Data
-A huge bulk of Facebook's project is data processing. yey! brief overview to come :P
+- Use librosa for reading in audio files
+- Also uses [h5py](http://docs.h5py.org/en/stable/quick.html), which is a Python package that lets you store huge amounts of numerical data and manipulate it from Numpy
+
+```python
+self.data = [DatasetSet(d, args.seq_len, args) for d in args.data]
+```
+This line of code is pulled from `train.py` and is basically how they pass in most data (`args.data` is passed in through the data parameters in the shell script `train.sh`)
+- `DatasetSet` is located in `data.py`. Its subclasses such as `H5Dataset` help take the program take in .wav and .h5 files, process/sample them depending on specific parameters, and then return a dataset. More about manipulating/pulling data from datasets can be found [here](http://docs.h5py.org/en/stable/quick.html).
