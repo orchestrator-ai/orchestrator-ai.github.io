@@ -1,3 +1,8 @@
+---
+layout: post
+title: [ Inference with In and Out of Domain Samples]
+---
+
 # Inference with In and Out of Domain Samples
 
 ## Summary
