@@ -3,11 +3,21 @@ title: Music Classifiers and how UMTN processes data
 layout: post
 author: Alicia and James
 ---
-making our own music classifier + brief overview of how UMTN collects data
+We make our own music classifier with librosa and learn about formatting musical data into tensors we can work with.
 
 ## Music Classifiers
 
+### Jupyter Notebook
+To format the data for this classifier:
+1. Download the Musicnet library
+2. Put the folder titled "musicnet" in the music-translation folder
+3. Create a folder titled "music_classification_data" in the "musicnet" folder
+4. Create two folders in "music_classification_data" titled "test" and "train"
+5. In the "test" and "train" folders, put folders with the wav files in each such that the folders are titled with the labels for the wav files (e.g. "Beethoven_Accompanied_Violin")
 
+![]({{site.url}}/resources/classifier/musicclassifierdata.png)
+
+Access the Jupyter Notebook [here]({{site.url}}/resources/classifier/music_classifier.png)
 
 ### Helpful Resources for inspiration:
 
@@ -31,7 +41,7 @@ making our own music classifier + brief overview of how UMTN collects data
 - Processes music with `librosa`
 - Multiple layers of LSTM Recurrent Neural Nets
 
-## UMTN Data
+## UMTN Data Notes
 - Use librosa for reading in audio files
 - Also uses [h5py](http://docs.h5py.org/en/stable/quick.html), which is a Python package that lets you store huge amounts of numerical data and manipulate it from Numpy
 

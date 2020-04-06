@@ -1,9 +1,9 @@
 ---
 layout: post
 title: [ Inference with In and Out of Domain Samples]
+author: Jasmine and Jim
 ---
-
-# Inference with In and Out of Domain Samples
+Replicating the paper's experiment with in and out of domain samples with the pretrained model and .wav samples we collected on our own
 
 ## Summary
 
