@@ -10,7 +10,7 @@ Replicating the paper's experiment with in and out of domain samples with the pr
 The purpose of this experiment was to somewhat tangentially replicate the paper's experiment with in and out of domain samples with the pretrained model and .wav samples we collected on our own, so this would be easily comparable to our trained model and so we can more objectively test this on our own/compare results to those of the paper. We ran samples through the encoder and decoder to get outputs, then ran the outputs through the encoder again to compare with the encoder outputs from the original file.
 
 ## Samples
-We collected 10 short (~10 sec) music samples on Youtube of various samples/domains not included in the training dataset for the pretrained model, including classical solo music on various instruments, Chinese classical music, jazz, and rock. In general, the model performed fairly well for classical music with more distinct tones, but poorly for music that was out of domain and/or included percussion or other non-instrumental sounds.
+We collected 10 short (~10 sec) music samples on Youtube of various samples/domains not included in the training dataset for the pretrained model, including classical solo music on various instruments, Chinese classical music, jazz, and rock. In general, the model performed well for classical music in instruments it was trained on, and decently on instruments it had never seen, provided that the notes/pitches were relatively distinct. However, it performed poorly on audio clips containing non-pitched instruments or other irregular sounds, such as heavy metal and swing jazz. 
 
 
 ## Results (to piano)
