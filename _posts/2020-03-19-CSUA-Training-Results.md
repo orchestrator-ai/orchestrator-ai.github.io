@@ -4,6 +4,8 @@ layout: post
 author: Praveen
 ---
 
+**Note: The code had an error, so it was only training one decoder :( So these results are not very significant. See also <https://github.com/facebookresearch/music-translation/issues/7> and <https://github.com/facebookresearch/music-translation/issues/15>**
+
 I compared the results of training the Universal Music Translation Network on
 CSUA to running inference with the provided pre-trained model.
 

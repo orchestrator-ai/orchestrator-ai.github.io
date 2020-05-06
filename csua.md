@@ -92,9 +92,21 @@ If you want to use more than two GPUs... well once I used 8 GPUs and my program 
 
 If you want to set your GPUs to, say, 6 and 7 run the command `export CUDA_VISIBLE_DEVICES=6,7`. It's that simple! There are 8 GPUs available, numbered 0 through 7.
 
+# The magic of `tmux` and JupyterLab
+
+If you are training a network for a long time *always launch `tmux` first*. `tmux` keeps running even if you're disconnected from the SSH server. (You can reconnect to the window with `tmux a #`. There are many many other tmux commands, I would recommend searching online for a quick guide or cheatsheet)
+
+One of the most wonderful things about `tmux` is that you can run a Jupyter notebook server from within it! And even if you disconnect and reconnect to that server with ssh, all of your notebook states will be preserved and everything will just work!
+
+And if that weren't enough... why not install and run a [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) server instead? It's like Jupyter notebook but has a file browser, tabs, and built-in console. And if you run it in `tmux`, you don't have to worry about losing any of your work, even if your SSH connection dies!
+
+Just remember, when you start up `tmux` your custom CUDA_VISIBLE_DEVICES value and virtualenv will be reset, so you will need to set those again in the `tmux` window.
+
 # Tensorflow, Pytorch, and virtualenv quickstart
 
 Create a virtualenv with `python3 -m venv [name-of-env]`. When you're in the virtualenv your terminal will have a `(name-of-env)` before the prompt.
+
+Using virtualenv with Jupyter: There can be weird issues where Jupyter is not in the virtualenv. To fix this, you can install jupyter in the virtualenv or just add your virtualenv as a Jupyter kernel (see <https://stackoverflow.com/questions/42449814/running-jupyter-notebook-in-a-virtualenv-installed-sklearn-module-not-available>)
 
 You can exit the environment with `deactivate`, and enter it with `source [name-of-env]/bin/activate`.
 
@@ -106,3 +118,8 @@ Install Pytorch with pip, then run this [notebook](resources/csua/test_gpu.ipynb
 Run `who` to find the list of users currently on the server.
 To write someone a message, just type `write [username] [tty]` and hit enter, then spam as much as you'd like.
 For example, `write user1 pts/8`.
+
+# Be a good citizen and use `/datasets`
+This is if you want to share a large dataset with others. It helps prevent the nightmare scenario where latte runs out of space and programs no longer work properly (this has happened in the past...)
+
+Anyway, you may find this [information on symlinks](https://stackoverflow.com/questions/1951742/how-can-i-symlink-a-file-in-linux) helpful. In essence, you can have a "folder" that is actually a link to `/datasets` and a program that depended on a dataset being downloaded in the same folder will just work!

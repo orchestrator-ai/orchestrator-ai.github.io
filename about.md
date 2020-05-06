@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Welcome to Orchestrator!
+Orchestrator is a [Launchpad](https://callaunchpad.org/) project. We are a student organization at UC Berkeley focusing on machine learning-related projects. 
 
 ### Links
 
@@ -14,10 +14,10 @@ Welcome to Orchestrator!
 
 ### The Team
 
-- Praveen - our awesome PL who is carrying this
-- Andrew
-- Jasmine
-- James
-- Alicia
-- (Jim??) jk we love u
+- Praveen Batra
+- Andrew Shi
+- Jasmine Wang
+- James Jiao
+- Alicia Wang
+- Jim Wang
 
